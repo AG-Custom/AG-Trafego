@@ -33,6 +33,11 @@ footer{color:white;background:var(--green)}.footer-top{display:grid;grid-templat
 
 .strategy-visual{transform:rotateX(var(--tilt-x)) rotateY(var(--tilt-y));transform-style:preserve-3d;transition:transform .18s ease-out}
 .process-grid{grid-template-columns:repeat(6,1fr)}
-main p,.footer-brand p{text-align:justify;text-justify:inter-word;hyphens:auto}
+main p,.footer-brand p{text-align:justify;text-justify:inter-word;hyphens:none;word-break:normal;overflow-wrap:normal}
+.process-dots{display:none}
+@media(max-width:720px){.process-grid{display:grid;grid-template-columns:none!important;grid-auto-flow:column;grid-auto-columns:84%;gap:16px;margin:48px -16px 0;padding:0 16px 12px;overflow-x:auto;overscroll-behavior-inline:contain;scroll-snap-type:inline mandatory;scroll-padding-inline:16px;scrollbar-width:none}.process-grid::-webkit-scrollbar{display:none}.process-step{min-height:230px;padding:26px 24px;border:1px solid var(--line);border-radius:16px;background:#fff;scroll-snap-align:start;scroll-snap-stop:always}.process-step p{font-size:13px;line-height:1.7;text-align:left;hyphens:none;word-break:normal;overflow-wrap:normal}.process-step h3{font-size:16px}.step-top{margin-bottom:28px}.process-dots{display:flex;align-items:center;justify-content:center;gap:7px;margin-top:22px}.process-dots button{width:7px;height:7px;padding:0;border:0;border-radius:50%;background:#173d3230;cursor:pointer;transition:.2s}.process-dots button.active{width:24px;border-radius:8px;background:var(--gold)}.footer-brand p,.footer-bottom span{hyphens:none;word-break:normal;overflow-wrap:normal}}
+@media(max-width:720px){.process-step p{text-align:justify}}
+@media(max-width:720px){.process-grid{grid-auto-columns:100%;margin:48px 0 0;padding:0 0 12px;scroll-padding-inline:0}.process-step{width:100%;scroll-snap-align:center}}
+@media(max-width:720px){.process-grid{grid-auto-columns:84%;margin:48px -16px 0;padding:0 16px 12px;scroll-padding-inline:16px}.process-step{width:auto;min-height:220px;padding:12px 28px 12px 0;border:0;border-radius:0;background:transparent;box-shadow:none;scroll-snap-align:start}}
 .visual-center img{width:88px;height:88px;object-fit:contain;filter:brightness(0) invert(1)}
 @media(max-width:720px){.visual-center img{width:72px;height:72px}}

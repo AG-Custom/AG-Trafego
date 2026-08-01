@@ -23,7 +23,9 @@ const resetVisual = () => { tilt.value = { '--tilt-x': '0deg', '--tilt-y': '0deg
     </div>
     <div class="container hero-inner">
       <div class="hero-copy">
-        <span class="eyebrow"><i></i> Gestão de Tráfego · Meta Ads · Google Ads</span>
+        <span class="eyebrow">
+          <i></i> Gestão de Tráfego · Meta Ads · Google Ads<i></i>
+        </span>
         <h1>Estratégia para transformar atenção em <em>crescimento.</em></h1>
         <p>Gestão de Tráfego estratégica para negócios locais, marcas e profissionais que desejam atrair clientes e crescer com consistência.</p>
         <div class="hero-actions">

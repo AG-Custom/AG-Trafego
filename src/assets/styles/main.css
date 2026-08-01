@@ -33,3 +33,6 @@ footer{color:white;background:var(--green)}.footer-top{display:grid;grid-templat
 
 .strategy-visual{transform:rotateX(var(--tilt-x)) rotateY(var(--tilt-y));transform-style:preserve-3d;transition:transform .18s ease-out}
 .process-grid{grid-template-columns:repeat(6,1fr)}
+main p,.footer-brand p{text-align:justify;text-justify:inter-word;hyphens:auto}
+.visual-center img{width:88px;height:88px;object-fit:contain;filter:brightness(0) invert(1)}
+@media(max-width:720px){.visual-center img{width:72px;height:72px}}

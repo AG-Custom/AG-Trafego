@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 import BaseIcon from '../ui/BaseIcon.vue'
+import logo from '../../assets/images/logo.svg'
 
 const tilt = ref({ '--tilt-x': '0deg', '--tilt-y': '0deg' })
 const moveVisual = (event) => {
@@ -37,7 +38,7 @@ const resetVisual = () => { tilt.value = { '--tilt-x': '0deg', '--tilt-y': '0deg
 
       <div class="strategy-visual" :style="tilt" aria-label="Fluxo interativo da operação de Gestão de Tráfego" @pointermove="moveVisual" @pointerleave="resetVisual">
         <div class="visual-orbit orbit-a"></div><div class="visual-orbit orbit-b"></div>
-        <div class="visual-center"><span>AB</span><small>Estratégia<br />integrada</small></div>
+        <div class="visual-center"><img :src="logo" alt="Alexandre Baiocco" /></div>
         <div class="visual-card card-a"><span class="visual-icon"><BaseIcon name="target" /></span><div><small>Aquisição</small><strong>Campanhas</strong></div><b>01</b></div>
         <div class="visual-card card-b"><span class="visual-icon"><BaseIcon name="layers" /></span><div><small>Comunicação</small><strong>Posicionamento</strong></div><b>02</b></div>
         <div class="visual-card card-c"><span class="visual-icon"><BaseIcon name="chart" /></span><div><small>Decisão</small><strong>Dados</strong></div><b>03</b></div>

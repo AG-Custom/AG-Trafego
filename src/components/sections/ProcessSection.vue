@@ -35,9 +35,8 @@ const updateActiveStep = () => {
     <div class="container">
       <SectionHeading 
         eyebrow="Como eu trabalho" 
-        title="Uma operação completa para impulsionar o crescimento do seu negócio." 
-        text="O problema raramente está apenas no anúncio."
-        subtext="Por isso, cada etapa trabalha conectada à próxima." centered />
+        title="Da análise inicial aos ajustes contínuos."
+        text="Cada etapa usa o que foi aprendido na anterior. A estratégia é revisada conforme os dados e a resposta do público." centered />
       <div ref="track" class="process-grid" @scroll.passive="updateActiveStep">
         <article v-for="step in steps" :key="step.number" class="process-step">
           <div class="step-top"><span>{{ step.number }}</span><i></i></div><h3>{{ step.title }}</h3><p>{{ step.text }}</p>

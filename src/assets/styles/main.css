@@ -41,3 +41,16 @@ main p,.footer-brand p{text-align:justify;text-justify:inter-word;hyphens:none;w
 @media(max-width:720px){.process-grid{grid-auto-columns:84%;margin:48px -16px 0;padding:0 16px 12px;scroll-padding-inline:16px}.process-step{width:auto;min-height:220px;padding:12px 28px 12px 0;border:0;border-radius:0;background:transparent;box-shadow:none;scroll-snap-align:start}}
 .visual-center img{width:88px;height:88px;object-fit:contain;filter:brightness(0) invert(1)}
 @media(max-width:720px){.visual-center img{width:72px;height:72px}}
+
+/* Diagnóstico e qualificação de público */
+.diagnosis-section{background:var(--cream);border-bottom:1px solid var(--line)}
+.diagnosis-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:42px}
+.diagnosis-card{min-height:220px;padding:27px;border:1px solid var(--line);border-radius:16px;background:var(--paper)}
+.diagnosis-card>span{color:var(--gold);font:600 13px var(--display)}
+.diagnosis-card h3{margin:29px 0 10px;font:700 17px var(--display)}
+.diagnosis-card p{margin:0;color:var(--muted);font-size:13px;line-height:1.65;text-align:left}
+.diagnosis-note{max-width:760px;margin:28px 0 0;color:#56635c;font-size:13px;line-height:1.65;text-align:left}
+.audience-fit{max-width:560px;margin:26px 0 0;padding-left:17px;border-left:2px solid var(--gold);color:#fffbd9;font-size:13px;line-height:1.65;text-align:left}
+section[id]{scroll-margin-top:82px}
+@media(max-width:1000px){.diagnosis-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:720px){.diagnosis-grid{grid-template-columns:1fr;gap:12px;margin-top:32px}.diagnosis-card{min-height:0;padding:23px}.diagnosis-card h3{margin-top:16px}.diagnosis-note{margin-top:22px}section[id]{scroll-margin-top:68px}}

@@ -12,7 +12,7 @@ import BaseIcon from '../ui/BaseIcon.vue'
         <h2>Vamos construir uma estratégia de crescimento para o seu negócio?</h2>
       </div>
       <div class="cta-action">
-        <p>Solicite uma análise estratégica e descubra os gargalos e oportunidades da sua operação digital.</p>
+        <p>Na conversa inicial, olhamos seu cenário, público, regiões de atuação, canais e possíveis oportunidades para suas campanhas.</p>
         <a href="https://wa.me/5527997920801?text=Olá,%20Alexandre!%20Quero%20solicitar%20uma%20análise%20estratégica." class="btn btn-dark btn-large" target="_blank" rel="noopener">
           Quero uma análise estratégica 
           <BaseIcon name="message" :size="19" />

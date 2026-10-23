@@ -10,8 +10,8 @@ import BaseIcon from '../ui/BaseIcon.vue'
       <div class="services-intro">
         <SectionHeading 
         eyebrow="O que está incluído" 
-        title="Tudo o que você precisa para crescer de forma mais previsível." 
-        text="Uma gestão próxima, orientada por dados e adaptada à realidade do seu negócio." />
+        title="Planejamento, gestão e análise das suas campanhas."
+        text="Uma gestão próxima, orientada por dados e adaptada à realidade do seu negócio. A produção de imagens e vídeos não está incluída." />
       </div>
       <div class="services-list">
         <article v-for="service in services" :key="service.title">

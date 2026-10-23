@@ -1,5 +1,5 @@
 <script setup>
-import { audiences } from '../../data/site'
+import { audiences, audienceFit } from '../../data/site'
 import SectionHeading from '../ui/SectionHeading.vue'
 import BaseIcon from '../ui/BaseIcon.vue'
 </script>
@@ -12,6 +12,7 @@ import BaseIcon from '../ui/BaseIcon.vue'
         eyebrow="Para quem é" 
         title="Estratégia para negócios que querem atrair clientes e crescer com consistência." 
         text="Para marcas, empresas e profissionais que desejam fortalecer sua presença digital e transformar investimento em oportunidades reais de negócio." light />
+        <p class="audience-fit">{{ audienceFit }}</p>
       </div>
       <div class="audience-list">
         <div v-for="item in audiences" :key="item">

@@ -15,12 +15,12 @@ const toggle = (index) => { openItem.value = openItem.value === index ? -1 : ind
         <SectionHeading 
         eyebrow="Perguntas frequentes" 
         title="Antes de começar, talvez você queira saber." />
-        <p class="faq-contact">Ainda tem alguma dúvida? <a href=#contato >Fale comigo →</a></p>
+        <p class="faq-contact">Ainda tem alguma dúvida? <a href="#contato">Fale comigo →</a></p>
       </div>
       <div class="faq-list">
         <article v-for="(faq, index) in faqs" :key="faq.question" :class="{ open: openItem === index }">
-          <button @click="toggle(index)"><span>{{ faq.question }}</span><BaseIcon name="chevron" :size="20" /></button>
-          <div class="faq-answer"><p>{{ faq.answer }}</p></div>
+          <button :aria-expanded="openItem === index" :aria-controls="`faq-answer-${index}`" @click="toggle(index)"><span>{{ faq.question }}</span><BaseIcon name="chevron" :size="20" /></button>
+          <div :id="`faq-answer-${index}`" class="faq-answer"><p>{{ faq.answer }}</p></div>
         </article>
       </div>
     </div>
